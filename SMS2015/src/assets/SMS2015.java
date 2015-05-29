@@ -187,6 +187,17 @@ public class SMS2015 extends javax.swing.JFrame
         //String console_output = String.getText(console);
         
         int player_slash = rng_jesus.nextInt(26);
+        if (player_slash > 18)
+        {
+            int miss = rng_jesus.nextInt(2);
+            switch (miss)
+            {
+                case 0:
+                    player_slash = 0;
+                    break;
+            }
+                   
+        }
         int spooky_slash = (rng_jesus.nextInt(14)+5);
         int spooky_stab = (rng_jesus.nextInt(3)+6);
         int spooky_attack = rng_jesus.nextInt(3)+1;
