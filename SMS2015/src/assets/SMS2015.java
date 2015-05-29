@@ -218,8 +218,8 @@ public class SMS2015 extends javax.swing.JFrame
             case 3://spooky heal
                 if (milk4bones > 0)
                 {
-                milk4bones--;
                 spookyhealth += 25;
+                milk4bones--; 
                 console.append("\nSkeleton drinks milk, healing 25 hp.\n");
                 spookyheal.setText(String.valueOf(milk4bones));
                 }
@@ -244,6 +244,7 @@ public class SMS2015 extends javax.swing.JFrame
         spookyhealth -= player_slash;
        // playerhealth -= spooky_attackstrength;
         
+        spooky_health.setText(String.valueOf(spookyhealth));
         spooky_health.setText(String.valueOf(spookyhealth));
         player_health.setText(String.valueOf(playerhealth));
         if (playerhealth < 1 || spookyhealth < 1)
@@ -305,8 +306,8 @@ public class SMS2015 extends javax.swing.JFrame
             case 3://spooky heal
                 if (milk4bones > 0)
                 {
-                milk4bones--;
                 spookyhealth += 25;
+                milk4bones--; 
                 console.append("\nSkeleton drinks milk, healing 25 hp.\n");
                 spookyheal.setText(String.valueOf(milk4bones));
                 }
@@ -333,6 +334,7 @@ public class SMS2015 extends javax.swing.JFrame
         spookyhealth -= player_stab;
        // playerhealth -= spooky_attackstrength;
         
+        spooky_health.setText(String.valueOf(spookyhealth));
         spooky_health.setText(String.valueOf(spookyhealth));
         
         player_health.setText(String.valueOf(playerhealth));
@@ -370,9 +372,9 @@ public class SMS2015 extends javax.swing.JFrame
     private void healActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_healActionPerformed
         int player_heals = Integer.parseInt(heals.getText());
         int spookyhealth = Integer.parseInt(spooky_health.getText());
-        int milk4bones = Integer.parseInt(spookyheal.getText());
-        
+        int milk4bones = Integer.parseInt(spookyheal.getText());     
         int playerhealth = Integer.parseInt(player_health.getText());
+        
         int spooky_slash = (rng_jesus.nextInt(14)+5);
         int spooky_stab = (rng_jesus.nextInt(3)+6);
         int spooky_attack = rng_jesus.nextInt(3)+1;
@@ -402,8 +404,8 @@ public class SMS2015 extends javax.swing.JFrame
             case 3://spooky heal
                 if (milk4bones > 0)
                 {
-                milk4bones--;
                 spookyhealth += 25;
+                milk4bones--;          
                 console.append("\nSkeleton drinks milk, healing 25 hp.\n");
                 spookyheal.setText(String.valueOf(milk4bones));
                 }
@@ -426,6 +428,7 @@ public class SMS2015 extends javax.swing.JFrame
     
         //playerhealth -= spooky_attackstrength;
         player_health.setText(String.valueOf(playerhealth));
+        spooky_health.setText(String.valueOf(spookyhealth));
         heals.setText(String.valueOf(player_heals));
         //playerhealth -= spooky_attackstrength;
         if (playerhealth < 1 || spookyhealth < 1)
