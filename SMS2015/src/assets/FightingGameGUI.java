@@ -214,8 +214,19 @@ public class FightingGameGUI extends javax.swing.JFrame
                 }
                 else
                 {
-                    player_slash = 0;
-                    console.append("\nDistraught at the lack of milk, Skeleton cries tears of pure calcium, \nsomehow protecting him of all damage.\n");
+                    int blockornot = rng_jesus.nextInt(2);
+                    
+                    switch (blockornot)
+                    {
+                        case 0:
+                            console.append("\nDistraught at the lack of milk, Skeleton cries tears of pure calcium, \nsomehow protecting him of all damage.\n");
+                            player_slash = 0;
+                            break;
+                        case 1:
+                            console.append("\nAgitated and out of milk, Skeleton screams loudly, spooking you for 5 hp.\n");
+                            playerhealth -= 5;
+                            break;
+                    }
                 }
         }
         
@@ -290,8 +301,19 @@ public class FightingGameGUI extends javax.swing.JFrame
                 }
                 else
                 {
-                    player_stab = 0;
-                    console.append("\nDistraught at the lack of milk, Skeleton cries tears of pure calcium, \nsomehow protecting him of all damage.\n");
+                    int blockornot = rng_jesus.nextInt(2);
+                    //player_slash = 0;
+                    switch (blockornot)
+                    {
+                        case 0:
+                            console.append("\nDistraught at the lack of milk, Skeleton cries tears of pure calcium, \nsomehow protecting him of all damage.\n");
+                            player_stab = 0;
+                            break;
+                        case 1:
+                            console.append("\nAgitated and out of milk, Skeleton screams loudly, spooking you for 5 hp.\n");
+                            playerhealth -= 5;
+                            break;
+                    }
                 }
                 
         }
@@ -375,9 +397,18 @@ public class FightingGameGUI extends javax.swing.JFrame
                 spookyheal.setText(String.valueOf(milk4bones));
                 }
                 else
-                {
+                {   int blockornot = rng_jesus.nextInt(2);
                     //player_slash = 0;
-                    console.append("\nDistraught at the lack of milk, Skeleton cries tears of pure calcium, \nsomehow protecting him of all damage.\n");
+                    switch (blockornot)
+                    {
+                        case 0:
+                            console.append("\nDistraught at the lack of milk, Skeleton cries tears of pure calcium, \nsomehow protecting him of all damage.\n");
+                            break;
+                        case 1:
+                            console.append("\nAgitated and out of milk, Skeleton screams loudly, spooking you for 5 hp.\n");
+                            playerhealth -= 5;
+                            break;
+                    }
                 }
         }
                 
