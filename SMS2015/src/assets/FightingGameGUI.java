@@ -188,7 +188,7 @@ public class FightingGameGUI extends javax.swing.JFrame
         
         int player_slash = rng_jesus.nextInt(26);
         int spooky_slash = (rng_jesus.nextInt(14)+5);
-        int spooky_stab = (rng_jesus.nextInt(14)+5);
+        int spooky_stab = (rng_jesus.nextInt(3)+6);
         int spooky_attack = rng_jesus.nextInt(3)+1;
         
         console.append("\nPlayer hacks at Skeleton for "+player_slash+" damage."); 
@@ -266,7 +266,7 @@ public class FightingGameGUI extends javax.swing.JFrame
         
         int player_stab = (rng_jesus.nextInt(5)+8);
         int spooky_slash = (rng_jesus.nextInt(14)+5);
-        int spooky_stab = (rng_jesus.nextInt(14)+5);
+        int spooky_stab = (rng_jesus.nextInt(3)+6);
         int spooky_attack = rng_jesus.nextInt(3)+1;
         console.append("\nPlayer chops Skeleton for "+player_stab+" damage."); 
         
@@ -341,7 +341,7 @@ public class FightingGameGUI extends javax.swing.JFrame
         
         int playerhealth = Integer.parseInt(player_health.getText());
         int spooky_slash = (rng_jesus.nextInt(14)+5);
-        int spooky_stab = (rng_jesus.nextInt(14)+5);
+        int spooky_stab = (rng_jesus.nextInt(3)+6);
         int spooky_attack = rng_jesus.nextInt(3)+1;
         
         
