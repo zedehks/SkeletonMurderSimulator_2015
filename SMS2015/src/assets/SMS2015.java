@@ -10,7 +10,7 @@
  */
 import java.util.Random;
 import javax.swing.ImageIcon;
-public class FightingGameGUI extends javax.swing.JFrame 
+public class SMS2015 extends javax.swing.JFrame 
 {
     Random rng_jesus = new Random();
     
@@ -18,7 +18,7 @@ public class FightingGameGUI extends javax.swing.JFrame
     /**
      * Creates new form FightingGameGUI
      */
-    public FightingGameGUI() 
+    public SMS2015() 
     {
         initComponents();
         SkeleDed.setVisible(false);
@@ -531,14 +531,15 @@ public class FightingGameGUI extends javax.swing.JFrame
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FightingGameGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SMS2015.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FightingGameGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SMS2015.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FightingGameGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SMS2015.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FightingGameGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SMS2015.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
@@ -546,7 +547,7 @@ public class FightingGameGUI extends javax.swing.JFrame
         {
             public void run() 
             {
-                new FightingGameGUI().setVisible(true);
+                new SMS2015().setVisible(true);
             }
         });
     }
