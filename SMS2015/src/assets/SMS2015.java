@@ -187,7 +187,7 @@ public class SMS2015 extends javax.swing.JFrame
         //String console_output = String.getText(console);
         
         int player_slash = rng_jesus.nextInt(26);
-        if (player_slash > 18)
+        if (player_slash > 13)
         {
             int miss = rng_jesus.nextInt(2);
             switch (miss)
